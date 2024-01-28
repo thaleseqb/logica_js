@@ -24,8 +24,6 @@ while (value != secret_number) {
   }
 }
 
-if (c == 1) {
-  alert(`número secreto encontrado, ${secret_number}. Depois de ${c} tentativa`);
-} else {
-  alert(`número secreto encontrado, ${secret_number}. Depois de ${c} tentativas`);
-}
+// adicionando operador ternário
+let correct_attempt = c == 1 ? 'tentativa': 'tentativas' 
+alert(`número secreto encontrado, ${secret_number}. Depois de ${c} ${correct_attempt}`);
